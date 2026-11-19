@@ -39,11 +39,10 @@ public class Results {
         this.sample = sample;
     }
 
-
     @Override
     public String toString() {
-        long duracionSegundos =  duracion / 1_000_000_000;
-        return "Results [nombre=" + nombre + ", duracion=" + duracionSegundos + " segundos, sample=" + sample + "]";
+        double duracionSegundos = duracion / 1_000_000_000.0;
+        return "Results [" + nombre + ", duration=" + duracion + "ns, " + duracionSegundos + "s, sample=" + sample + "]";
     }
     
 
